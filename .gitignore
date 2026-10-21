@@ -1,0 +1,32 @@
+# Entornos y secretos (nunca al repositorio)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+google-services.json
+firebase-service-account.json
+
+# Dependencias y compilados
+/backend/vendor/
+/backend/node_modules/
+/backend/public/build/
+/backend/public/storage
+/backend/storage/*.key
+/backend/storage/logs/
+/backend/storage/framework/cache/
+/backend/storage/framework/sessions/
+/backend/storage/framework/views/
+/android/build/
+/android/**/build/
+/android/.gradle/
+/android/local.properties
+/android/*.jks
+/android/*.keystore
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<title>Laanositos · icono (vista previa)</title>
+<defs>
+  <g id="ppaw"><path d="M0,-18 C30,-18 58,2 58,34 C58,62 38,78 16,80 C7,81 3,75 0,75 C-3,75 -7,81 -16,80 C-38,78 -58,62 -58,34 C-58,2 -30,-18 0,-18 Z"/><ellipse cx="-66" cy="-24" rx="21" ry="29" transform="rotate(-28 -66 -24)"/><ellipse cx="-24" cy="-60" rx="21" ry="31" transform="rotate(-9 -24 -60)"/><ellipse cx="24" cy="-60" rx="21" ry="31" transform="rotate(9 24 -60)"/><ellipse cx="66" cy="-24" rx="21" ry="29" transform="rotate(28 66 -24)"/></g>
+  <g id="pdrop"><path d="M0,-46 C13,-24 29,-6 29,15 A29,29 0 1,1 -29,15 C-29,-6 -13,-24 0,-46 Z"/></g>
+  <pattern id="phatch" patternUnits="userSpaceOnUse" width="16" height="16" patternTransform="rotate(40)">
+    <rect width="16" height="16" fill="#5B2EE6"/>
+    <rect width="5" height="16" fill="#A08CFF" opacity="0.55"/>
+  </pattern>
+</defs>
+<!-- Simula el recorte circular del lanzador (72 dp visibles de 108 dp) -->
+<circle cx="512" cy="512" r="341" fill="#18C3CD"/>
+<circle cx="512" cy="512" r="300" fill="#FFFFFF" opacity="0.08"/>
+<g transform="translate(266.30 536.30) rotate(80) scale(1.200)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<g transform="translate(296.00 441.80) rotate(50) scale(0.864)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<g transform="translate(298.70 636.20) rotate(118) scale(0.792)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<g transform="translate(757.70 536.30) rotate(-80) scale(1.200)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<g transform="translate(728.00 441.80) rotate(-50) scale(0.864)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<g transform="translate(725.30 636.20) rotate(-118) scale(0.792)"><use href="#pdrop" fill="#B6F2F7"/><ellipse cx="-9" cy="14" rx="7" ry="11" fill="#EAFDFF" opacity="0.9" transform="rotate(-20 -9 14)"/></g>
+<use href="#ppaw" transform="translate(512 512) scale(2.3)" fill="url(#phatch)" stroke="#4A1FD3" stroke-width="6" stroke-linejoin="round"/>
+</svg>

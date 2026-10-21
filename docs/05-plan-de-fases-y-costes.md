@@ -4,13 +4,13 @@ Versión 1.0 · 21-10-2026
 
 ## 1. Política de coste cero
 
-Regla del proyecto: **solo herramientas gratuitas**. Todo lo que se usa es gratis o ya está pagado (IONOS). Hay tres puntos donde "gratis" tiene límites y la decisión es de Paulina:
+Regla del proyecto: **solo herramientas gratuitas**. Todo lo que se usa es gratis o ya está pagado (IONOS). Hay tres puntos donde "gratis" tiene límites; dos ya están decididos (los asume Jaime) y el tercero (WhatsApp) queda en modo gratuito:
 
 | Concepto | Coste | Alternativa gratuita | Decisión |
 |---|---|---|---|
-| Publicar la app en **Google Play** | US$ 25, una sola vez (cuenta de desarrollador) | Descargar el APK desde la web (instalación manual, menos cómoda y sin actualizaciones automáticas) | Pendiente |
+| Publicar la app en **Google Play** | US$ 25, una sola vez (cuenta de desarrollador) | Descargar el APK desde la web (instalación manual, menos cómoda y sin actualizaciones automáticas) | **Decidido (21-10-2026): Jaime paga los US$ 25 y crea la cuenta de desarrollador a su nombre; la app se publica bajo su propiedad.** |
 | **WhatsApp** iniciado por el negocio (recordatorios automáticos por plantilla) | Coste por mensaje (céntimos de dólar; varía por categoría y país). Además, desde octubre de 2026 los mensajes de servicio son gratis solo hasta 1.000 al mes por número; después ≈ CLP 15–22 cada uno | Recordatorios automáticos por **email y push** (gratis) y envío por WhatsApp **manual de un toque** desde el panel con el mensaje ya escrito | Modo gratuito por defecto |
-| **Dominio propio** `lanositos.cl` | ≈ CLP 10.000 al año (NIC Chile) | Subdominio gratuito de un dominio que ya pagamos | Pendiente |
+| **Dominio propio** `lanositos.cl` | CLP 9.990 al año (NIC Chile, tarifa vigente desde noviembre de 2023) | Subdominio gratuito de un dominio que ya pagamos | **Decidido (21-10-2026): Jaime compra `lanositos.cl` a su nombre y lo paga él.** |
 
 No son costes de herramientas, pero hay que saberlo: las pasarelas cobran **comisión por venta** (Webpay Plus 1,49–2,50 % + IVA según volumen; Mercado Pago 2,99 % + IVA con tarjeta, tarifas publicadas a junio 2026), descontada de cada abono. No tienen cuota fija ni de alta.
 
@@ -44,13 +44,13 @@ Total orientativo: **4 a 5 meses** de trabajo a tiempo parcial. Las fases 3 y 4 
 | Qué | Quién | Coste | Cuándo |
 |---|---|---|---|
 | Subdominio de pruebas en IONOS + base de datos MariaDB + usuario SSH | Jaime | 0 | Fase 1 |
-| Dominio definitivo (`lanositos.cl`) o subdominio gratuito | Paulina decide | 0 o ≈ CLP 10.000/año | Fase 1 |
+| Dominio `lanositos.cl` registrado en NIC Chile a nombre de Jaime, con DNS apuntando a IONOS | Jaime | CLP 9.990/año (lo paga Jaime) | Fase 1 |
 | Email del negocio (en IONOS, p. ej. `hola@…`) | Jaime | 0 | Fase 1 |
 | Cuenta de desarrollador Transbank (ambiente de integración) y luego contrato Webpay Plus (código de comercio) | Jaime / Paulina | 0 (solo comisión) | Fase 2 |
 | Cuenta Mercado Pago del negocio + credenciales de desarrollador | Paulina / Jaime | 0 (solo comisión) | Fase 2 |
 | Proyecto Firebase (Messaging, Crashlytics) | Jaime | 0 | Fase 3 |
-| Cuenta Google Play (o decisión de distribuir APK) | Paulina | US$ 25 o 0 | Fase 3 |
-| 15–20 testers si se publica en Play | Paulina | 0 | Fase 3 |
+| Cuenta de desarrollador de Google Play a nombre de Jaime (cuenta personal nueva: prueba cerrada obligatoria antes de publicar) | Jaime | US$ 25 (lo paga Jaime) | Fase 3 |
+| 15–20 testers para la prueba cerrada de Google Play (mínimo 12 durante 14 días seguidos) | Paulina (clientes de confianza y familia) | 0 | Fase 3 |
 | Meta Business + app de desarrollador + número de WhatsApp dedicado (SIM o número virtual propio; no puede usarse en la app normal) | Paulina / Jaime | 0 | Fase 4 |
 | Inicio de actividades en el SII y boleta electrónica (sistema gratuito del SII) | Paulina (con contador) | 0 (trámite) | Antes de cobrar online |
 | Revisión de textos legales por abogado chileno | Paulina | depende | Fase 5 |

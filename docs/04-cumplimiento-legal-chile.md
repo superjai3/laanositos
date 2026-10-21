@@ -74,7 +74,7 @@ La ley obliga a los dueños a identificar a sus perros con microchip e inscribir
 
 ## 6. Google Play
 
-- Cuenta de desarrollador: US$ 25 una sola vez (único coste no evitable si se publica en Play; alternativa gratuita: distribuir el APK desde la web).
+- Cuenta de desarrollador: US$ 25 una sola vez. Decisión (21-10-2026): la cuenta será personal y a nombre de Jaime, que la paga; su nombre legal aparecerá públicamente como desarrollador en la ficha de Play. Aunque la app se publique bajo su cuenta, el **responsable del tratamiento** de los datos de los clientes sigue siendo el negocio de Paulina, y así debe constar en la política de privacidad y en el formulario de seguridad de datos.
 - Las cuentas **personales creadas después del 13-11-2023** deben pasar una **prueba cerrada con al menos 12 testers durante 14 días seguidos** antes de poder publicar en producción (las cuentas de organización no, pero exigen número D-U-N-S). Conviene reclutar 15–20 personas (familia, clientes de confianza).
 - Política de privacidad pública enlazada en la ficha, formulario *Data safety* coherente con los datos que trata la app, permisos mínimos (notificaciones, cámara/galería solo para fotos).
 - Pagos: los bienes físicos y los servicios presenciales pueden cobrarse con pasarelas externas (Webpay/Mercado Pago); no aplica la facturación de Google Play.

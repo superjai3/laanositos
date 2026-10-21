@@ -191,7 +191,7 @@ Tareas del scheduler (hora de Chile):
 |---|---|---|
 | Local | PC de Jaime/Andrés (Laravel Herd o XAMPP + MariaDB; Android Studio) | `lanositos.test` |
 | Pruebas | Subdominio en IONOS (`pruebas.<dominio>`) con BD propia | pasarelas en modo integración/sandbox |
-| Producción | IONOS Hosting Plus, BD propia | `lanositos.cl` o subdominio gratuito (decisión pendiente) |
+| Producción | IONOS Hosting Plus, BD propia | `lanositos.cl` (dominio de Jaime en NIC Chile, DNS hacia IONOS) |
 
 Despliegue en IONOS (hosting compartido):
 

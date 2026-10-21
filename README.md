@@ -20,7 +20,9 @@ Plataforma para la peluquería canina **Lanositos** (Chile): app Android, web co
 | Boleta electrónica | Sistema gratuito del SII (pendiente: la pyme aún no tiene inicio de actividades) | Requisito legal previo a vender; ver `docs/04-cumplimiento-legal-chile.md`. |
 | Marca | **Lanositos** (con doble A, como el logo) | Confirmado por Jaime. |
 | Repositorio y backup | GitHub `superjai3/lanositos` (privado) + copia en `E:\Proyectos\Lanositos` | Regla del proyecto. |
-| Coste | **Política de coste cero**: solo herramientas gratuitas | Ver excepciones inevitables en `docs/05-plan-de-fases-y-costes.md`. |
+| Google Play | Cuenta de desarrollador a nombre de Jaime; él paga los US$ 25 y la app se publica bajo su propiedad | Decisión de Jaime (21-10-2026). |
+| Dominio | `lanositos.cl` en NIC Chile, a nombre de Jaime y pagado por él | Decisión de Jaime (21-10-2026). |
+| Coste | **Política de coste cero** para el resto: solo herramientas gratuitas | Ver `docs/05-plan-de-fases-y-costes.md`. |
 
 ## Estructura del repositorio
 

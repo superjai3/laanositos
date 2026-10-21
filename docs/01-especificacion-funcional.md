@@ -189,7 +189,7 @@ iOS, varias sucursales, programa de puntos/fidelización, chat con inteligencia 
 4. ¿Cobro anticipado online de los servicios o siempre en el local?
 5. Catálogo inicial de productos (fotos, precios con IVA, stock) y política de despacho (comunas y costo) o solo retiro.
 6. Número de WhatsApp para el bot: ¿el actual del negocio (se migra a la API) o uno nuevo? El número de la API no puede usarse a la vez en la app WhatsApp normal.
-7. Dominio: ¿compra `lanositos.cl` (≈ CLP 10.000/año) o usamos un subdominio gratuito de un dominio que ya tenemos?
-8. Publicación en Google Play (US$ 25 una sola vez) o distribución gratuita del APK desde la web para empezar.
+7. Dominio: **decidido** (21-10-2026), Jaime compra `lanositos.cl` a su nombre en NIC Chile.
+8. Google Play: **decidido** (21-10-2026), cuenta de desarrollador a nombre de Jaime, pagada por él; la app se publica bajo su propiedad.
 9. Fecha prevista de inicio de actividades en el SII.
 10. Nombre legal y datos de contacto que irán en Términos y Condiciones.

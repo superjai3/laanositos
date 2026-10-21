@@ -1,6 +1,6 @@
-# Laanositos — Peluquería canina
+# Lanositos — Peluquería canina
 
-Plataforma para la peluquería canina **Laanositos** (Chile): app Android, web con panel de administración y chatbot de WhatsApp, con agenda de baños y cortes, historial de cada perro, tienda con carrito, pagos online y recordatorios automáticos.
+Plataforma para la peluquería canina **Lanositos** (Chile): app Android, web con panel de administración y chatbot de WhatsApp, con agenda de baños y cortes, historial de cada perro, tienda con carrito, pagos online y recordatorios automáticos.
 
 > Estado: **Fase 0 — diseño y decisiones** (completada el 21-10-2026). El código empieza en la Fase 1 (ver `docs/05-plan-de-fases-y-costes.md`).
 
@@ -18,14 +18,14 @@ Plataforma para la peluquería canina **Laanositos** (Chile): app Android, web c
 | Email | SMTP de IONOS (incluido) | Gratis. |
 | Notificaciones push | Firebase Cloud Messaging | Gratis. |
 | Boleta electrónica | Sistema gratuito del SII (pendiente: la pyme aún no tiene inicio de actividades) | Requisito legal previo a vender; ver `docs/04-cumplimiento-legal-chile.md`. |
-| Marca | **Laanositos** (con doble A, como el logo) | Confirmado por Jaime. |
-| Repositorio y backup | GitHub `superjai3/laanositos` (privado) + copia en `E:\Proyectos\Laanositos` | Regla del proyecto. |
+| Marca | **Lanositos** (con doble A, como el logo) | Confirmado por Jaime. |
+| Repositorio y backup | GitHub `superjai3/lanositos` (privado) + copia en `E:\Proyectos\Lanositos` | Regla del proyecto. |
 | Coste | **Política de coste cero**: solo herramientas gratuitas | Ver excepciones inevitables en `docs/05-plan-de-fases-y-costes.md`. |
 
 ## Estructura del repositorio
 
 ```
-laanositos/
+lanositos/
 ├── README.md
 ├── docs/
 │   ├── 01-especificacion-funcional.md     Qué hace el sistema (actores, módulos, reglas, flujos)
@@ -37,8 +37,8 @@ laanositos/
 │   └── schema.sql                          Esquema MariaDB de referencia (las migraciones Laravel salen de aquí)
 ├── branding/
 │   ├── README.md                           Paleta, tipografías y uso del logo
-│   ├── logo-laanositos.svg                 Logo principal (fondo turquesa)
-│   ├── logo-laanositos-transparente.svg    Logo sin fondo
+│   ├── logo-lanositos.svg                 Logo principal (fondo turquesa)
+│   ├── logo-lanositos-transparente.svg    Logo sin fondo
 │   ├── logo-horizontal.svg                 Versión horizontal para cabeceras web
 │   ├── icono-app-foreground.svg            Capa frontal del icono adaptativo Android
 │   ├── icono-app-foreground-plano.svg      Misma capa, apta para importar como Vector Asset
@@ -60,7 +60,7 @@ laanositos/
 
 ## Reglas del proyecto
 
-- Todo el código y la documentación viven en este repositorio y se copian a `E:\Proyectos\Laanositos`.
+- Todo el código y la documentación viven en este repositorio y se copian a `E:\Proyectos\Lanositos`.
 - Solo herramientas gratuitas; cualquier coste se discute antes y se anota en `docs/05-plan-de-fases-y-costes.md`.
 - Cumplimiento de la legislación chilena en todo lo que se construye (ver `docs/04-cumplimiento-legal-chile.md`).
 - Cada cambio relevante se registra en el README o en `docs/`.

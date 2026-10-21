@@ -1,5 +1,5 @@
 -- =====================================================================
---  Laanositos · Esquema de base de datos de referencia (MariaDB 10.6+)
+--  Lanositos · Esquema de base de datos de referencia (MariaDB 10.6+)
 --  Versión 1.0 · 21-10-2026
 --
 --  En el proyecto Laravel este esquema se implementa como migraciones.
@@ -16,9 +16,9 @@
 SET NAMES utf8mb4;
 SET time_zone = '+00:00';
 
-CREATE DATABASE IF NOT EXISTS laanositos
+CREATE DATABASE IF NOT EXISTS lanositos
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE laanositos;
+USE lanositos;
 
 -- ---------------------------------------------------------------------
 -- 1. Cuentas, consentimientos y derechos del titular
@@ -389,7 +389,7 @@ CREATE TABLE cart_items (
 
 CREATE TABLE orders (
   id                 BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  number             VARCHAR(20) NOT NULL COMMENT 'Número visible, p. ej. LAA-2026-000123',
+  number             VARCHAR(20) NOT NULL COMMENT 'Número visible, p. ej. LAN-2026-000123',
   user_id            BIGINT UNSIGNED NOT NULL,
   status             ENUM('pendiente_pago','pagado','preparando','listo_para_retiro','enviado','entregado','cancelado','retracto','reembolsado') NOT NULL DEFAULT 'pendiente_pago',
   source             ENUM('app','web','whatsapp','admin') NOT NULL,
@@ -666,7 +666,7 @@ INSERT INTO reminder_rules (code, name, audience, channel_email, channel_push, c
   ('nuevo_pedido_admin','Nuevo pedido pagado',      'admin',   1, 1, 0, NULL, 0);
 
 INSERT INTO settings (`key`, `value`, `group`) VALUES
-  ('business.name',            'Laanositos',                      'negocio'),
+  ('business.name',            'Lanositos',                      'negocio'),
   ('business.rut',             '',                                'negocio'),
   ('business.address',         '',                                'negocio'),
   ('business.phone',           '',                                'negocio'),

@@ -1,4 +1,4 @@
-# Identidad visual · Laanositos
+# Identidad visual · Lanositos
 
 Rediseño vectorial del logo original (`logo-original.png`), manteniendo sus elementos: anillo de huellas rellenas y huecas, texto arqueado "PELUQUERÍA CANINA", huella central con textura, gotas de agua y cinta rosa con el nombre.
 
@@ -8,8 +8,8 @@ Mejoras respecto al original: formas limpias y consistentes, texto convertido a 
 
 | Archivo | Uso |
 |---|---|
-| `logo-laanositos.svg` | Logo principal con fondo turquesa (redes, impresión, pantalla de inicio de la app). |
-| `logo-laanositos-transparente.svg` | Mismo logo sin fondo, para colocar sobre fotos o fondos claros/turquesa. |
+| `logo-lanositos.svg` | Logo principal con fondo turquesa (redes, impresión, pantalla de inicio de la app). |
+| `logo-lanositos-transparente.svg` | Mismo logo sin fondo, para colocar sobre fotos o fondos claros/turquesa. |
 | `logo-horizontal.svg` | Cabecera de la web y correos (huella + nombre + subtítulo). |
 | `icono-app-foreground.svg` | Capa frontal del icono adaptativo de Android (con textura). |
 | `icono-app-foreground-plano.svg` | Misma capa sin `<use>`/`<pattern>`: es la que acepta Android Studio al importar como *Vector Asset*. |

@@ -1,4 +1,4 @@
-"""Genera los SVG del logo de Laanositos con el texto convertido a trazados.
+"""Genera los SVG del logo de Lanositos con el texto convertido a trazados.
 
 Uso: python3 -I build_logo.py <ruta Fredoka.ttf> <carpeta salida>
 """
@@ -221,7 +221,7 @@ def logo(with_background=True):
     bg = f'<rect width="1024" height="1024" rx="190" fill="{TURQ}"/>' if with_background else ""
     top_text = text_on_arc(BOLD, "PELUQUERÍA CANINA", cx, cy, 333, 56, 9, INK)
     body = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · Peluquería canina</title>
+<title>Lanositos · Peluquería canina</title>
 {defs()}
 {bg}
 {paw_ring(cx, cy, 430, 14, 0.44, skip=(5, 9))}
@@ -229,7 +229,7 @@ def logo(with_background=True):
 {drops(cx, 452)}
 {drops(cx, 452, mirror=True)}
 {central_paw(cx, 452, 1.42)}
-{ribbon(512, 2130, 1440, 0.265, 60, 38, "LAANOSITOS", 88, 5)}
+{ribbon(512, 2130, 1440, 0.265, 60, 38, "LANOSITOS", 88, 5)}
 </svg>
 """
     return body
@@ -237,10 +237,10 @@ def logo(with_background=True):
 
 # -------------------------------------------------------------- horizontal
 def horizontal():
-    name, name_w = text_straight(BOLD, "Laanositos", 330, 232, 178, 2, PURPLE_DEEP)
+    name, name_w = text_straight(BOLD, "Lanositos", 330, 232, 178, 2, PURPLE_DEEP)
     sub, _ = text_straight(SEMI, "PELUQUERÍA CANINA", 338, 318, 54, 12, INK)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 400" width="1500" height="400">
-<title>Laanositos · Peluquería canina (horizontal)</title>
+<title>Lanositos · Peluquería canina (horizontal)</title>
 {defs("h")}
 {drops(165, 200, scale=0.72, prefix="h")}
 {drops(165, 200, mirror=True, scale=0.72, prefix="h")}
@@ -255,7 +255,7 @@ def horizontal():
 def icon_foreground():
     # 108x108 dp → 1024 px; zona segura: círculo central de 66 dp (≈ 626 px)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · icono (capa frontal)</title>
+<title>Lanositos · icono (capa frontal)</title>
 {defs("i")}
 {drops(512, 512, scale=1.35, size=1.2, prefix="i")}
 {drops(512, 512, mirror=True, scale=1.35, size=1.2, prefix="i")}
@@ -266,7 +266,7 @@ def icon_foreground():
 
 def icon_background():
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · icono (capa de fondo)</title>
+<title>Lanositos · icono (capa de fondo)</title>
 <rect width="1024" height="1024" fill="{TURQ}"/>
 <circle cx="512" cy="512" r="400" fill="#FFFFFF" opacity="0.08"/>
 </svg>
@@ -275,7 +275,7 @@ def icon_background():
 
 def icon_monochrome():
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · icono monocromo</title>
+<title>Lanositos · icono monocromo</title>
 {defs("m")}
 {central_paw(512, 512, 2.7, prefix="m", hatch=False).replace(PURPLE, "#FFFFFF").replace(PURPLE_DEEP, "#FFFFFF")}
 </svg>
@@ -284,7 +284,7 @@ def icon_monochrome():
 
 def icon_preview():
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · icono (vista previa)</title>
+<title>Lanositos · icono (vista previa)</title>
 {defs("p")}
 <!-- Simula el recorte circular del lanzador (72 dp visibles de 108 dp) -->
 <circle cx="512" cy="512" r="341" fill="{TURQ}"/>
@@ -312,14 +312,14 @@ def icon_foreground_flat():
                  f'stroke-width="6" stroke-linejoin="round">{PAW_SHAPES}</g>')
     body = "\n".join(parts)
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<title>Laanositos · icono (capa frontal, plano para VectorDrawable)</title>
+<title>Lanositos · icono (capa frontal, plano para VectorDrawable)</title>
 {body}
 </svg>
 """
 
 files = {
-    "logo-laanositos.svg": logo(True),
-    "logo-laanositos-transparente.svg": logo(False),
+    "logo-lanositos.svg": logo(True),
+    "logo-lanositos-transparente.svg": logo(False),
     "logo-horizontal.svg": horizontal(),
     "icono-app-foreground.svg": icon_foreground(),
     "icono-app-foreground-plano.svg": icon_foreground_flat(),

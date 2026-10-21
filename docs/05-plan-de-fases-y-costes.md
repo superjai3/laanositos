@@ -10,7 +10,7 @@ Regla del proyecto: **solo herramientas gratuitas**. Todo lo que se usa es grati
 |---|---|---|---|
 | Publicar la app en **Google Play** | US$ 25, una sola vez (cuenta de desarrollador) | Descargar el APK desde la web (instalación manual, menos cómoda y sin actualizaciones automáticas) | Pendiente |
 | **WhatsApp** iniciado por el negocio (recordatorios automáticos por plantilla) | Coste por mensaje (céntimos de dólar; varía por categoría y país). Además, desde octubre de 2026 los mensajes de servicio son gratis solo hasta 1.000 al mes por número; después ≈ CLP 15–22 cada uno | Recordatorios automáticos por **email y push** (gratis) y envío por WhatsApp **manual de un toque** desde el panel con el mensaje ya escrito | Modo gratuito por defecto |
-| **Dominio propio** `laanositos.cl` | ≈ CLP 10.000 al año (NIC Chile) | Subdominio gratuito de un dominio que ya pagamos | Pendiente |
+| **Dominio propio** `lanositos.cl` | ≈ CLP 10.000 al año (NIC Chile) | Subdominio gratuito de un dominio que ya pagamos | Pendiente |
 
 No son costes de herramientas, pero hay que saberlo: las pasarelas cobran **comisión por venta** (Webpay Plus 1,49–2,50 % + IVA según volumen; Mercado Pago 2,99 % + IVA con tarjeta, tarifas publicadas a junio 2026), descontada de cada abono. No tienen cuota fija ni de alta.
 
@@ -44,7 +44,7 @@ Total orientativo: **4 a 5 meses** de trabajo a tiempo parcial. Las fases 3 y 4 
 | Qué | Quién | Coste | Cuándo |
 |---|---|---|---|
 | Subdominio de pruebas en IONOS + base de datos MariaDB + usuario SSH | Jaime | 0 | Fase 1 |
-| Dominio definitivo (`laanositos.cl`) o subdominio gratuito | Paulina decide | 0 o ≈ CLP 10.000/año | Fase 1 |
+| Dominio definitivo (`lanositos.cl`) o subdominio gratuito | Paulina decide | 0 o ≈ CLP 10.000/año | Fase 1 |
 | Email del negocio (en IONOS, p. ej. `hola@…`) | Jaime | 0 | Fase 1 |
 | Cuenta de desarrollador Transbank (ambiente de integración) y luego contrato Webpay Plus (código de comercio) | Jaime / Paulina | 0 (solo comisión) | Fase 2 |
 | Cuenta Mercado Pago del negocio + credenciales de desarrollador | Paulina / Jaime | 0 (solo comisión) | Fase 2 |
@@ -58,8 +58,8 @@ Total orientativo: **4 a 5 meses** de trabajo a tiempo parcial. Las fases 3 y 4 
 
 ## 4. Gestión del proyecto
 
-- **Repositorio**: `superjai3/laanositos` (privado). Ramas: `main` (estable), `develop` (integración), `feature/*`. Pull requests con revisión antes de mezclar a `main`.
-- **Copia de seguridad**: después de cada sesión de trabajo se sincroniza `E:\Proyectos\Laanositos` con el repositorio; las copias de la base de datos de producción se guardan en `E:\Proyectos\Laanositos\_respaldos` (cifradas).
+- **Repositorio**: `superjai3/lanositos` (privado). Ramas: `main` (estable), `develop` (integración), `feature/*`. Pull requests con revisión antes de mezclar a `main`.
+- **Copia de seguridad**: después de cada sesión de trabajo se sincroniza `E:\Proyectos\Lanositos` con el repositorio; las copias de la base de datos de producción se guardan en `E:\Proyectos\Lanositos\_respaldos` (cifradas).
 - **Tareas**: GitHub Issues + Projects (gratis) con una tarjeta por requisito (RF-xx).
 - **Documentación**: `docs/` se actualiza en cada fase; el README registra los cambios relevantes.
 - **Pruebas**: PHPUnit/Pest en backend (GitHub Actions), pruebas de UI en Compose, prueba cerrada con usuarios reales antes de producción.

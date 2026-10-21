@@ -113,7 +113,7 @@ Abstracción común: `start(Payable $payable): RedirectUrl`, `confirm(Request $r
 1. `POST /payments/start` crea el registro `payments` y llama a `Transaction::create(buyOrder, sessionId, amount, returnUrl)`.
 2. Se redirige al cliente al `url` + `token_ws` de Transbank (en la app, en una Chrome Custom Tab).
 3. Transbank vuelve a `returnUrl` con `token_ws`; el servidor ejecuta `commit(token)` y guarda `response_code`, `authorization_code`, `card_number` (4 últimos), `status`.
-4. Si `response_code = 0` el pedido pasa a `pagado`; si no, `rechazado`. Luego se muestra el resultado y la app recibe push/deep link `laanositos://pago/{id}`.
+4. Si `response_code = 0` el pedido pasa a `pagado`; si no, `rechazado`. Luego se muestra el resultado y la app recibe push/deep link `lanositos://pago/{id}`.
 5. Desarrollo con el **ambiente de integración** de Transbank (credenciales públicas de prueba); producción con el código de comercio y la API key que entrega Transbank tras el contrato.
 
 **Mercado Pago (Checkout Pro)** — SDK oficial `mercadopago/dx-php`.
@@ -146,7 +146,7 @@ Tareas del scheduler (hora de Chile):
 | `admin:daily-digest` | Diaria 08:30 | Resumen para Paulina con la lista "le toca" y botones de WhatsApp. |
 | `appointments:mark-no-show` | Cada hora | Citas pasadas sin completar → `no_asistio` (revisable). |
 | `payments:reconcile` | Cada 30 min | Pagos `iniciado` de más de 30 min → consulta a la pasarela y cierra. |
-| `backup:run` | Diaria 03:00 | Volcado de MariaDB + fotos a `storage/backups` (rotación 14 días); descarga semanal a `E:\Proyectos\Laanositos\_respaldos`. |
+| `backup:run` | Diaria 03:00 | Volcado de MariaDB + fotos a `storage/backups` (rotación 14 días); descarga semanal a `E:\Proyectos\Lanositos\_respaldos`. |
 | `whatsapp:timeouts` | Cada 5 min | Cierra conversaciones del bot inactivas (30 min) y reactiva el bot tras el periodo "hablar con Paulina". |
 
 ## 9. WhatsApp Cloud API
@@ -161,8 +161,8 @@ Tareas del scheduler (hora de Chile):
 ## 10. App Android (Kotlin)
 
 - Arquitectura: `app` (UI Compose) + `core/network` (Retrofit, interceptor de token) + `core/data` (repositorios, Room) + `feature/*` (auth, pets, appointments, shop, cart, orders, profile).
-- Navegación Compose con deep links: `laanositos://cita/{id}`, `laanositos://pago/{id}`, `laanositos://pedido/{id}`.
-- Pago: se abre la URL devuelta por `POST /payments/start` en una Chrome Custom Tab; al terminar, el backend redirige a `laanositos://pago/{id}` y la app consulta el estado. (Google Play permite pagos externos para bienes físicos y servicios presenciales; no aplica Play Billing.)
+- Navegación Compose con deep links: `lanositos://cita/{id}`, `lanositos://pago/{id}`, `lanositos://pedido/{id}`.
+- Pago: se abre la URL devuelta por `POST /payments/start` en una Chrome Custom Tab; al terminar, el backend redirige a `lanositos://pago/{id}` y la app consulta el estado. (Google Play permite pagos externos para bienes físicos y servicios presenciales; no aplica Play Billing.)
 - Sesión: token Sanctum guardado en `EncryptedSharedPreferences`.
 - Caché: catálogo, servicios y historial en Room para consulta sin conexión; las escrituras siempre contra la API.
 - Publicación: Android App Bundle firmado; ver requisitos de Google Play en doc 04 §6 y coste en doc 05.
@@ -189,14 +189,14 @@ Tareas del scheduler (hora de Chile):
 
 | Entorno | Dónde | Dominio |
 |---|---|---|
-| Local | PC de Jaime/Andrés (Laravel Herd o XAMPP + MariaDB; Android Studio) | `laanositos.test` |
+| Local | PC de Jaime/Andrés (Laravel Herd o XAMPP + MariaDB; Android Studio) | `lanositos.test` |
 | Pruebas | Subdominio en IONOS (`pruebas.<dominio>`) con BD propia | pasarelas en modo integración/sandbox |
-| Producción | IONOS Hosting Plus, BD propia | `laanositos.cl` o subdominio gratuito (decisión pendiente) |
+| Producción | IONOS Hosting Plus, BD propia | `lanositos.cl` o subdominio gratuito (decisión pendiente) |
 
 Despliegue en IONOS (hosting compartido):
 
-1. Conectar por SSH, `git clone` del repo en una carpeta fuera del *document root* (por ejemplo `~/laanositos`).
-2. Apuntar el dominio/subdominio a `~/laanositos/backend/public` desde el panel de IONOS (así `.env`, `storage` y el código no son accesibles desde la web).
+1. Conectar por SSH, `git clone` del repo en una carpeta fuera del *document root* (por ejemplo `~/lanositos`).
+2. Apuntar el dominio/subdominio a `~/lanositos/backend/public` desde el panel de IONOS (así `.env`, `storage` y el código no son accesibles desde la web).
 3. `composer install --no-dev --optimize-autoloader`, `.env` de producción, `php artisan key:generate`, `migrate --force`, `storage:link`, `config:cache`, `route:cache`, `view:cache`.
 4. Crear las dos tareas cron del §8 en el administrador de cron de IONOS.
 5. Script `deploy.sh` que repite los pasos 3 para cada actualización; GitHub Actions ejecuta tests antes de cada merge a `main`.

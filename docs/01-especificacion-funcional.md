@@ -1,10 +1,10 @@
 # 01 · Especificación funcional
 
-Versión 1.0 · 21-10-2026 · Proyecto Laanositos (peluquería canina, Chile)
+Versión 1.0 · 21-10-2026 · Proyecto Lanositos (peluquería canina, Chile)
 
 ## 1. Objetivo
 
-Que los clientes de Laanositos puedan, desde la app Android, la web o WhatsApp:
+Que los clientes de Lanositos puedan, desde la app Android, la web o WhatsApp:
 
 - registrarse y mantener la ficha de cada uno de sus perros,
 - agendar baños y cortes y ver el historial de cada perro,
@@ -172,7 +172,7 @@ Para la administradora:
 - Idioma: español (Chile). Moneda CLP. Formato de teléfono +56 9 XXXX XXXX. Validación de RUT (módulo 11) cuando se informe.
 - Rendimiento: adecuado a hosting compartido (consultas indexadas, caché de catálogo y de disponibilidad, imágenes optimizadas y redimensionadas al subir).
 - Seguridad: HTTPS obligatorio, contraseñas con hash (bcrypt/argon2), tokens con caducidad para la app, limitación de intentos, protección CSRF en la web, validación de todo lo que entra por API y por WhatsApp, cifrado en reposo de RUT y teléfono, registros sin datos personales innecesarios.
-- Disponibilidad: copias de seguridad diarias de base de datos y fotos (script en cron + copia descargada a `E:\Proyectos\Laanositos\_respaldos`).
+- Disponibilidad: copias de seguridad diarias de base de datos y fotos (script en cron + copia descargada a `E:\Proyectos\Lanositos\_respaldos`).
 - Accesibilidad básica: contraste suficiente, tamaños de toque de 48 dp en la app, etiquetas en formularios.
 - App: tolerante a mala conexión (cache local del catálogo y del historial), tamaño contenido, Android 8.0 (API 26) o superior.
 - Observabilidad: registro de errores en servidor y app (herramientas gratuitas: logs de Laravel, Firebase Crashlytics gratis).
@@ -189,7 +189,7 @@ iOS, varias sucursales, programa de puntos/fidelización, chat con inteligencia 
 4. ¿Cobro anticipado online de los servicios o siempre en el local?
 5. Catálogo inicial de productos (fotos, precios con IVA, stock) y política de despacho (comunas y costo) o solo retiro.
 6. Número de WhatsApp para el bot: ¿el actual del negocio (se migra a la API) o uno nuevo? El número de la API no puede usarse a la vez en la app WhatsApp normal.
-7. Dominio: ¿compra `laanositos.cl` (≈ CLP 10.000/año) o usamos un subdominio gratuito de un dominio que ya tenemos?
+7. Dominio: ¿compra `lanositos.cl` (≈ CLP 10.000/año) o usamos un subdominio gratuito de un dominio que ya tenemos?
 8. Publicación en Google Play (US$ 25 una sola vez) o distribución gratuita del APK desde la web para empezar.
 9. Fecha prevista de inicio de actividades en el SII.
 10. Nombre legal y datos de contacto que irán en Términos y Condiciones.
